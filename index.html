@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+<title>DJ music app</title>
+    </head>
+    <body background="background.png" id="body">
+        <center>
+            <h3 class="btn btn-warning" id="title">
+                AI DJ WEB APP
+                <br>
+                <label id="note">NOTE - When your left wrist goes up it increases the speed and when you put your right wrist up it increase the volume</label>
+            </h3>
+
+            <div id="speed_div" class="btn btn-primary">
+                <img src="disk.gif" width="300" height="300">
+                <br>
+                <h3 id="speed">Speed</h3>
+            </div>
+
+            
+            <div id="volume_div" class="btn btn-primary">
+                <img src="disk.gif" width="300" height="300">
+                <br>
+                <h3 id="volume">Volume</h3>
+            </div>
+
+            <br><br>
+            <button id="play" onclick="play()" class="btn btn-success">Play</button>
+            <button id="stop" onclick="stop()" class="btn btn-success">Stop</button>
+            <br><br>
+            <select id="dropdown">
+                
+                
+                <option>Happy</option>
+                <option>U Cant Touch This</option>
+                <option>Monkeys Spinning Monkeys</option>
+
+            </select>
+        </center>
+    </body>
+    <script src="main.js"></script>
+</html>
